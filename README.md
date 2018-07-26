@@ -6,3 +6,11 @@ Swift and OC
 1.  cd  project
 
 2.  carthage update --no-use-binaries --platform ios  
+
+
+reference: 
+https://github.com/zhuhaow/NEKit
+https://github.com/yichengchen/RabbitVpnDemo 
+
+
+### If it helps, please star, thank u 
