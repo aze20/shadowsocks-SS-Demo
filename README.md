@@ -8,7 +8,7 @@ Swift and OC
 2.  carthage update --no-use-binaries --platform ios  
 
 
-##reference: 
+## reference: 
 
 https://github.com/zhuhaow/NEKit
 
