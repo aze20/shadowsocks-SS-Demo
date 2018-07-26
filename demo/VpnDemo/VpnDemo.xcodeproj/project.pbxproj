@@ -1,0 +1,638 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8403DF25210862DF007042A2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8403DF24210862DF007042A2 /* AppDelegate.m */; };
+		8403DF28210862DF007042A2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8403DF27210862DF007042A2 /* ViewController.m */; };
+		8403DF2B210862DF007042A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8403DF29210862DF007042A2 /* Main.storyboard */; };
+		8403DF2D210862DF007042A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8403DF2C210862DF007042A2 /* Assets.xcassets */; };
+		8403DF30210862DF007042A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8403DF2E210862DF007042A2 /* LaunchScreen.storyboard */; };
+		8403DF33210862DF007042A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8403DF32210862DF007042A2 /* main.m */; };
+		8403DF3B21086318007042A2 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8403DF3A21086318007042A2 /* NetworkExtension.framework */; };
+		8403DF6021086634007042A2 /* NEKitRule.conf in Resources */ = {isa = PBXBuildFile; fileRef = 8403DF5F21086634007042A2 /* NEKitRule.conf */; };
+		8403DF7B21086DB4007042A2 /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8403DF7A21086DB4007042A2 /* PacketTunnelProvider.swift */; };
+		8403DF8021086DB4007042A2 /* PacketTunnel.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8403DF7821086DB4007042A2 /* PacketTunnel.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8403DF8521086DFF007042A2 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8403DF3A21086318007042A2 /* NetworkExtension.framework */; };
+		8403DF9121086E31007042A2 /* tun2socks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8403DF8621086E31007042A2 /* tun2socks.framework */; };
+		8403DF9221086E31007042A2 /* NEKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8403DF8721086E31007042A2 /* NEKit.framework */; };
+		8403DF9321086E31007042A2 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8403DF8821086E31007042A2 /* CocoaLumberjack.framework */; };
+		8403DF9421086E31007042A2 /* lwip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8403DF8921086E31007042A2 /* lwip.framework */; };
+		8403DF9521086E31007042A2 /* MMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8403DF8A21086E31007042A2 /* MMDB.framework */; };
+		8403DF9621086E31007042A2 /* Resolver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8403DF8B21086E31007042A2 /* Resolver.framework */; };
+		8403DF9721086E32007042A2 /* Yaml.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8403DF8C21086E31007042A2 /* Yaml.framework */; };
+		8403DF9821086E32007042A2 /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8403DF8D21086E31007042A2 /* CocoaLumberjackSwift.framework */; };
+		8403DF9A21086E32007042A2 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8403DF8F21086E31007042A2 /* CocoaAsyncSocket.framework */; };
+		8403DF9B21086E32007042A2 /* Sodium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8403DF9021086E31007042A2 /* Sodium.framework */; };
+		841A318A21095CEF0094497C /* VpnManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 841A318921095CEF0094497C /* VpnManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8403DF7E21086DB4007042A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8403DF18210862DF007042A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8403DF7721086DB4007042A2;
+			remoteInfo = PacketTunnel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8403DF8421086DB4007042A2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8403DF8021086DB4007042A2 /* PacketTunnel.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8403DF20210862DF007042A2 /* VpnDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VpnDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8403DF23210862DF007042A2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8403DF24210862DF007042A2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8403DF26210862DF007042A2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8403DF27210862DF007042A2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8403DF2A210862DF007042A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8403DF2C210862DF007042A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8403DF2F210862DF007042A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8403DF31210862DF007042A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8403DF32210862DF007042A2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8403DF3A21086318007042A2 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		8403DF3C21086318007042A2 /* VpnDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VpnDemo.entitlements; sourceTree = "<group>"; };
+		8403DF5F21086634007042A2 /* NEKitRule.conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NEKitRule.conf; sourceTree = "<group>"; };
+		8403DF7821086DB4007042A2 /* PacketTunnel.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PacketTunnel.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8403DF7A21086DB4007042A2 /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
+		8403DF7C21086DB4007042A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8403DF7D21086DB4007042A2 /* PacketTunnel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PacketTunnel.entitlements; sourceTree = "<group>"; };
+		8403DF8621086E31007042A2 /* tun2socks.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = tun2socks.framework; path = Carthage/Build/iOS/tun2socks.framework; sourceTree = "<group>"; };
+		8403DF8721086E31007042A2 /* NEKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NEKit.framework; path = Carthage/Build/iOS/NEKit.framework; sourceTree = "<group>"; };
+		8403DF8821086E31007042A2 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjack.framework; path = Carthage/Build/iOS/CocoaLumberjack.framework; sourceTree = "<group>"; };
+		8403DF8921086E31007042A2 /* lwip.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = lwip.framework; path = Carthage/Build/iOS/lwip.framework; sourceTree = "<group>"; };
+		8403DF8A21086E31007042A2 /* MMDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MMDB.framework; path = Carthage/Build/iOS/MMDB.framework; sourceTree = "<group>"; };
+		8403DF8B21086E31007042A2 /* Resolver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Resolver.framework; path = Carthage/Build/iOS/Resolver.framework; sourceTree = "<group>"; };
+		8403DF8C21086E31007042A2 /* Yaml.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Yaml.framework; path = Carthage/Build/iOS/Yaml.framework; sourceTree = "<group>"; };
+		8403DF8D21086E31007042A2 /* CocoaLumberjackSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjackSwift.framework; path = Carthage/Build/iOS/CocoaLumberjackSwift.framework; sourceTree = "<group>"; };
+		8403DF8F21086E31007042A2 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = Carthage/Build/iOS/CocoaAsyncSocket.framework; sourceTree = "<group>"; };
+		8403DF9021086E31007042A2 /* Sodium.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sodium.framework; path = Carthage/Build/iOS/Sodium.framework; sourceTree = "<group>"; };
+		841A318821095CEF0094497C /* VpnManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VpnManager.h; sourceTree = "<group>"; };
+		841A318921095CEF0094497C /* VpnManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VpnManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8403DF1D210862DF007042A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8403DF3B21086318007042A2 /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8403DF7521086DB4007042A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8403DF9121086E31007042A2 /* tun2socks.framework in Frameworks */,
+				8403DF9221086E31007042A2 /* NEKit.framework in Frameworks */,
+				8403DF9321086E31007042A2 /* CocoaLumberjack.framework in Frameworks */,
+				8403DF9421086E31007042A2 /* lwip.framework in Frameworks */,
+				8403DF9521086E31007042A2 /* MMDB.framework in Frameworks */,
+				8403DF9621086E31007042A2 /* Resolver.framework in Frameworks */,
+				8403DF9721086E32007042A2 /* Yaml.framework in Frameworks */,
+				8403DF9821086E32007042A2 /* CocoaLumberjackSwift.framework in Frameworks */,
+				8403DF9A21086E32007042A2 /* CocoaAsyncSocket.framework in Frameworks */,
+				8403DF9B21086E32007042A2 /* Sodium.framework in Frameworks */,
+				8403DF8521086DFF007042A2 /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8403DF17210862DF007042A2 = {
+			isa = PBXGroup;
+			children = (
+				8403DF22210862DF007042A2 /* VpnDemo */,
+				8403DF7921086DB4007042A2 /* PacketTunnel */,
+				8403DF21210862DF007042A2 /* Products */,
+				8403DF5F21086634007042A2 /* NEKitRule.conf */,
+				8403DF3921086318007042A2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8403DF21210862DF007042A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8403DF20210862DF007042A2 /* VpnDemo.app */,
+				8403DF7821086DB4007042A2 /* PacketTunnel.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8403DF22210862DF007042A2 /* VpnDemo */ = {
+			isa = PBXGroup;
+			children = (
+				8403DF3C21086318007042A2 /* VpnDemo.entitlements */,
+				8403DF23210862DF007042A2 /* AppDelegate.h */,
+				8403DF24210862DF007042A2 /* AppDelegate.m */,
+				8403DF26210862DF007042A2 /* ViewController.h */,
+				8403DF27210862DF007042A2 /* ViewController.m */,
+				841A318821095CEF0094497C /* VpnManager.h */,
+				841A318921095CEF0094497C /* VpnManager.m */,
+				8403DF29210862DF007042A2 /* Main.storyboard */,
+				8403DF2C210862DF007042A2 /* Assets.xcassets */,
+				8403DF2E210862DF007042A2 /* LaunchScreen.storyboard */,
+				8403DF31210862DF007042A2 /* Info.plist */,
+				8403DF32210862DF007042A2 /* main.m */,
+			);
+			path = VpnDemo;
+			sourceTree = "<group>";
+		};
+		8403DF3921086318007042A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8403DF8F21086E31007042A2 /* CocoaAsyncSocket.framework */,
+				8403DF8821086E31007042A2 /* CocoaLumberjack.framework */,
+				8403DF8D21086E31007042A2 /* CocoaLumberjackSwift.framework */,
+				8403DF8921086E31007042A2 /* lwip.framework */,
+				8403DF8A21086E31007042A2 /* MMDB.framework */,
+				8403DF8721086E31007042A2 /* NEKit.framework */,
+				8403DF8B21086E31007042A2 /* Resolver.framework */,
+				8403DF9021086E31007042A2 /* Sodium.framework */,
+				8403DF8621086E31007042A2 /* tun2socks.framework */,
+				8403DF8C21086E31007042A2 /* Yaml.framework */,
+				8403DF3A21086318007042A2 /* NetworkExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8403DF7921086DB4007042A2 /* PacketTunnel */ = {
+			isa = PBXGroup;
+			children = (
+				8403DF7A21086DB4007042A2 /* PacketTunnelProvider.swift */,
+				8403DF7C21086DB4007042A2 /* Info.plist */,
+				8403DF7D21086DB4007042A2 /* PacketTunnel.entitlements */,
+			);
+			path = PacketTunnel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8403DF1F210862DF007042A2 /* VpnDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8403DF36210862DF007042A2 /* Build configuration list for PBXNativeTarget "VpnDemo" */;
+			buildPhases = (
+				8403DF1C210862DF007042A2 /* Sources */,
+				8403DF1D210862DF007042A2 /* Frameworks */,
+				8403DF1E210862DF007042A2 /* Resources */,
+				8403DF6121086CA2007042A2 /* ShellScript */,
+				8403DF8421086DB4007042A2 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8403DF7F21086DB4007042A2 /* PBXTargetDependency */,
+			);
+			name = VpnDemo;
+			productName = VpnDemo;
+			productReference = 8403DF20210862DF007042A2 /* VpnDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8403DF7721086DB4007042A2 /* PacketTunnel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8403DF8121086DB4007042A2 /* Build configuration list for PBXNativeTarget "PacketTunnel" */;
+			buildPhases = (
+				8403DF7421086DB4007042A2 /* Sources */,
+				8403DF7521086DB4007042A2 /* Frameworks */,
+				8403DF7621086DB4007042A2 /* Resources */,
+				8403DF9F210873B7007042A2 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PacketTunnel;
+			productName = PacketTunnel;
+			productReference = 8403DF7821086DB4007042A2 /* PacketTunnel.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8403DF18210862DF007042A2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = admin;
+				TargetAttributes = {
+					8403DF1F210862DF007042A2 = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.NetworkExtensions.iOS = {
+								enabled = 1;
+							};
+							com.apple.VPNLite = {
+								enabled = 1;
+							};
+						};
+					};
+					8403DF7721086DB4007042A2 = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
+						SystemCapabilities = {
+							com.apple.NetworkExtensions.iOS = {
+								enabled = 1;
+							};
+							com.apple.VPNLite = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 8403DF1B210862DF007042A2 /* Build configuration list for PBXProject "VpnDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8403DF17210862DF007042A2;
+			productRefGroup = 8403DF21210862DF007042A2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8403DF1F210862DF007042A2 /* VpnDemo */,
+				8403DF7721086DB4007042A2 /* PacketTunnel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8403DF1E210862DF007042A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8403DF30210862DF007042A2 /* LaunchScreen.storyboard in Resources */,
+				8403DF6021086634007042A2 /* NEKitRule.conf in Resources */,
+				8403DF2D210862DF007042A2 /* Assets.xcassets in Resources */,
+				8403DF2B210862DF007042A2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8403DF7621086DB4007042A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8403DF6121086CA2007042A2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/CocoaAsyncSocket.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CocoaLumberjack.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CocoaLumberjackSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/lwip.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/MMDB.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/NEKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Sodium.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/tun2socks.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Yaml.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Resolver.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		8403DF9F210873B7007042A2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8403DF1C210862DF007042A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8403DF28210862DF007042A2 /* ViewController.m in Sources */,
+				8403DF33210862DF007042A2 /* main.m in Sources */,
+				841A318A21095CEF0094497C /* VpnManager.m in Sources */,
+				8403DF25210862DF007042A2 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8403DF7421086DB4007042A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8403DF7B21086DB4007042A2 /* PacketTunnelProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8403DF7F21086DB4007042A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8403DF7721086DB4007042A2 /* PacketTunnel */;
+			targetProxy = 8403DF7E21086DB4007042A2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8403DF29210862DF007042A2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8403DF2A210862DF007042A2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8403DF2E210862DF007042A2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8403DF2F210862DF007042A2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8403DF34210862DF007042A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8403DF35210862DF007042A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8403DF37210862DF007042A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = VpnDemo/VpnDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 47K54JR865;
+				INFOPLIST_FILE = VpnDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LieZhun.VpnDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VpnDemo/VpnDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8403DF38210862DF007042A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = VpnDemo/VpnDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 47K54JR865;
+				INFOPLIST_FILE = VpnDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LieZhun.VpnDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VpnDemo/VpnDemo-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8403DF8221086DB4007042A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PacketTunnel/PacketTunnel.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 47K54JR865;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = PacketTunnel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LieZhun.VpnDemo.PacketTunnel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8403DF8321086DB4007042A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PacketTunnel/PacketTunnel.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 47K54JR865;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = PacketTunnel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LieZhun.VpnDemo.PacketTunnel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8403DF1B210862DF007042A2 /* Build configuration list for PBXProject "VpnDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8403DF34210862DF007042A2 /* Debug */,
+				8403DF35210862DF007042A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8403DF36210862DF007042A2 /* Build configuration list for PBXNativeTarget "VpnDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8403DF37210862DF007042A2 /* Debug */,
+				8403DF38210862DF007042A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8403DF8121086DB4007042A2 /* Build configuration list for PBXNativeTarget "PacketTunnel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8403DF8221086DB4007042A2 /* Debug */,
+				8403DF8321086DB4007042A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8403DF18210862DF007042A2 /* Project object */;
+}
