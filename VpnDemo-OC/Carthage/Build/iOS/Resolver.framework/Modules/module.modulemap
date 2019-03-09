@@ -1,4 +1,0 @@
-framework module Resolver {
-    header "Resolver-Swift.h"
-    requires objc
-}
