@@ -1,0 +1,9 @@
+{
+  "commitish" : "0.1.3",
+  "iOS" : [
+    {
+      "name" : "Resolver",
+      "hash" : "7e073e0b48cd6a7a847fa58f3fc8a1fb11e7a6bf1366bf92b5aae9d0c36fba50"
+    }
+  ]
+}
